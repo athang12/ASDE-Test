@@ -55,7 +55,7 @@ Imagine Abhimanyu in Chakravyuha. There are 11 circles in the Chakravyuha surrou
   <li>Each circle is guarded by different enemy where enemy is equipped with k1, k2……k11 powers Abhmanyu start from the innermost circle with p power Abhimanyu has a boon to skip fighting enemy a times </li>
   <li>Abhmanyu can recharge himself with power b times </li>
   <li>Battling in each circle will result in loss of the same power from Abhimanyu as the enemy. </li>
-  <li>•	If Abhmanyu enter the circle with energy less than the respective enemy, he will lose the battle</li>
+  <li>If Abhmanyu enter the circle with energy less than the respective enemy, he will lose the battle</li>
   <li>k3 and k7 enemies are endured with power to regenerate themselves once with half of their initial power and can attack Abhimanyu from behind if he is battling in iteratively next circle </li>
 </ul>  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
