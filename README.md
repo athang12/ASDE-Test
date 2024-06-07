@@ -33,8 +33,8 @@
     <li>
       <a href="#introduction-to-problem">Introduction to Problem</a>
     </li>
-    <li><a href="#usage">Problem Analysis and Simplification</a></li>
-    <li><a href="#roadmap">Designing Algorithm</a></li>
+    <li><a href="#problem-analysis-and-simplification">Problem Analysis and Simplification</a></li>
+    <li><a href="#designing-algorithm">Designing Algorithm</a></li>
     <li><a href="#contributing">Implementation</a></li>
     <li><a href="#license">Algorithm Analysis</a></li>
     <li>
@@ -51,6 +51,9 @@
 <!-- Introduction to Problem -->
 ## Introduction to Problem
 Imagine Abhimanyu in Chakravyuha. There are 11 circles in the Chakravyuha surrounded by different enemies. Abhimanyu is located in the innermost circle and has to cross all the 11 circles to reach Pandavas army back
+
+Images will go here
+
 <ul>
   <li>Each circle is guarded by different enemy where enemy is equipped with k1, k2……k11 powers Abhmanyu start from the innermost circle with p power Abhimanyu has a boon to skip fighting enemy a times </li>
   <li>Abhmanyu can recharge himself with power b times </li>
@@ -62,25 +65,14 @@ Imagine Abhimanyu in Chakravyuha. There are 11 circles in the Chakravyuha surrou
 
 
 
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+## Problem Analysis and Simplification
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- Designing Algorithm -->
+## Designing Algorithm
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
