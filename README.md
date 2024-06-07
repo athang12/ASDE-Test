@@ -31,45 +31,33 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#introduction-to-problem">Introduction to Problem</a>
     </li>
+    <li><a href="#usage">Problem Analysis and Simplification</a></li>
+    <li><a href="#roadmap">Designing Algorithm</a></li>
+    <li><a href="#contributing">Implementation</a></li>
+    <li><a href="#license">Algorithm Analysis</a></li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#about-the-project">Documentation</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#built-with">Assumptions</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
+<!-- Introduction to Problem -->
+## Introduction to Problem
+Imagine Abhimanyu in Chakravyuha. There are 11 circles in the Chakravyuha surrounded by different enemies. Abhimanyu is located in the innermost circle and has to cross all the 11 circles to reach Pandavas army back
+<ul>
+  <li>Each circle is guarded by different enemy where enemy is equipped with k1, k2……k11 powers Abhmanyu start from the innermost circle with p power Abhimanyu has a boon to skip fighting enemy a times </li>
+  <li>Abhmanyu can recharge himself with power b times </li>
+  <li>Battling in each circle will result in loss of the same power from Abhimanyu as the enemy. </li>
+  <li>•	If Abhmanyu enter the circle with energy less than the respective enemy, he will lose the battle</li>
+  <li>k3 and k7 enemies are endured with power to regenerate themselves once with half of their initial power and can attack Abhimanyu from behind if he is battling in iteratively next circle </li>
+</ul>  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
