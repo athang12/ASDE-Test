@@ -139,26 +139,29 @@ Write code here
 
 <details>
 <summary>Python Code</summary>
-```
-def function_name():
+<code>
+  def function_name():
     # Python code here
     pass
-```
+</code>
+
+
 </details>
 <details>
 <summary>JavaScript Code</summary>
-```
-  function ABC(){
-  }
-```
+<code>
+  def function_name():
+    # Python code here
+    pass
+</code>
 </details>
 <details>
 <summary>C++ Code</summary>
-```
-void functionName() {
-    // C++ code here
-}
-```
+<code>
+  def function_name():
+    # Python code here
+    pass
+</code>
 </details>
 
 _For more examples, please refer to the [Documentation](https://example.com)_
