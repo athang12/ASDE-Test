@@ -1,7 +1,7 @@
 def can_cross_chakravyuha(p, k, a, b):
     original_p = p  # Store the original power for recharging
     curr_a = a  # Current skips available
-    curr_b = b  # Current recharges available
+    curr_b = b  # Current recharges available.
     
     # Function to handle the attack from each enemy
     def handle_enemy_attack(p, enemy_power, curr_level, curr_a, curr_b):
