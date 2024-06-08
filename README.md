@@ -37,12 +37,7 @@
     <li><a href="#designing-algorithm">Designing Algorithm</a></li>
     <li><a href="#implementation">Implementation</a></li>
     <li><a href="#algorithm-analysis">Algorithm Analysis</a></li>
-    <li>
-      <a href="#documentation">Documentation</a>
-      <ul>
-        <li><a href="#assumptions">Assumptions</a></li>
-      </ul>
-    </li>
+    <li><a href="#documentation">Documentation</a></li>
     <li><a href ="#contact-and-acknowledgement">Contact and Acknowledgement</a></li>
   </ol>
 </details>
@@ -215,13 +210,13 @@ Time Complexity
    - Therefore, the loop executes 11 times regardless of the input.
 
 2. Inner Function (`handle_enemy_attack`):
-   - The `handle_enemy_attack` function contains a series of conditional checks and arithmetic operations. Each call to this function takes a constant amount of time \( O(1) \).
+   - The `handle_enemy_attack` function contains a series of conditional checks and arithmetic operations. Each call to this function takes a constant amount of time O(1).
 
 3. Complexity per Iteration:
-   - Since `handle_enemy_attack` runs in \( O(1) \) and is called once per iteration of the main loop, each iteration of the main loop is \( O(1) \).
+   - Since `handle_enemy_attack` runs in O(1) and is called once per iteration of the main loop, each iteration of the main loop is O(1).
 
 4. Overall Time Complexity:
-   - The main loop runs 11 times and each iteration is \( O(1) \). Hence, the overall time complexity is \( O(11) \), which simplifies to \( O(1) \).
+   - The main loop runs 11 times and each iteration is O(1). Hence, the overall time complexity is O(11), which simplifies to O(1).
 
 Space Complexity
 
@@ -233,11 +228,11 @@ Space Complexity
    - No additional data structures of non-constant size are used.
 
 3. Space for Input:
-   - Space to store the vector `k` is \( O(11) \), which simplifies to \( O(1) \) since it is a constant size.
-   - Space to store integers `p`, `a`, and `b` is \( O(1) \).
+   - Space to store the vector `k` is O(11), which simplifies to O(1) since it is a constant size.
+   - Space to store integers `p`, `a`, and `b` is O(1).
 
 4. Overall Space Complexity:
-   - The overall space complexity is \( O(1) \).
+   - The overall space complexity is O(1).
 
 Summary
 - Time Complexity: O(1)
@@ -253,12 +248,6 @@ The algorithm operates in constant time and space because the size of the input 
 ## Documentation
 
 Docu
-
-### Assumptions
-<ol>
-  <li>Meaning of word <strong>Recharge</strong> <br/> During the design of this algorithm, the term "Recharge" is defined as restoring Abhimanyu's power to its original level, regardless of his current power state.<br/>Recharging Abhimanyu when his power is already at its initial level is unnecessary.</li>
-  <li>The enemies in circles k3 and k7 deploy their optimal power strategically. If Abhimanyu defeats the enemies in these circles, they will regenerate with half of their initial power and can attack Abhimanyu from behind. Conversely, if Abhimanyu skips the k3 and k7 circles using his boon, these enemies will attack him from behind with their full initial power.</li>
-</ol>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
