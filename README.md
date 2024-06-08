@@ -148,7 +148,7 @@ def function_name():
 </details>
 <details>
 <summary>JavaScript Code</summary>
-```javascript
+javascript
 function functionName() {
     // JavaScript code here
 }
@@ -156,7 +156,7 @@ function functionName() {
 </details>
 <details>
 <summary>C++ Code</summary>
-```cpp
+cpp
 void functionName() {
     // C++ code here
 }
