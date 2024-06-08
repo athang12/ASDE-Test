@@ -189,7 +189,7 @@ WHILE True DO
 ```
 
 
-### [Python Code]([https://example.com](https://github.com/athang12/Answer-to-the-prblm/blob/main/python_solution.py))
+### [Python Code](python_solution.py)
 ### [C++ Code]([https://example.com](https://github.com/athang12/Answer-to-the-prblm/blob/main/cpp_solution.cpp))
 ### [Javascript Code]([https://example.com](https://github.com/athang12/Answer-to-the-prblm/blob/main/javascript_solution.js))
 ### [Executable]([https://example.com](https://github.com/athang12/Answer-to-the-prblm/blob/main/executable.exe))
