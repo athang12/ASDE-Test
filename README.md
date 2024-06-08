@@ -102,7 +102,31 @@ Images will go here
 <!-- Designing Algorithm -->
 ## Designing Algorithm
 
-Pseudo code or workflow here
+Add workflow image here
+
+1. Initialization:
+- Variables Initialization: Store Abhimanyu's initial power, the current number of skips (`curr_a`), and recharges (`curr_b`).
+- Function Definitions: Define an inner function `handle_enemy_attack` to handle the logic of attacking or skipping an enemy.
+
+2. Handle Enemy Attack:
+- Check Abhimanyu's Power: If Abhimanyu's current power (`p`) is greater than or equal to the enemy's power, deduct the enemy's power from Abhimanyu's power.
+- Insufficient Power Handling:
+  - Recharge Available: If Abhimanyu has recharges (`curr_b > 0`) and if recharging would provide enough power to defeat the enemy, perform the recharge.
+    - Special rule: If the enemy is at level 2 or 6, increase the power of the next enemy by half of the current enemy's power.
+  - No Recharge Available, Skip Available: If there are no recharges left but skips are available (`curr_a > 0`), skip the current enemy.
+    - Special rule: If the enemy is at level 2 or 6, increase the power of the next enemy by the current enemy's power.
+  - No Recharge or Skip Available: If neither recharges nor skips are available, return `False`.
+
+3. Loop Through Enemies:
+- Iterate Through Enemies: For each enemy in the list of enemies' power levels, apply the logic defined in the `handle_enemy_attack` function.
+- Check Success: If at any point Abhimanyu cannot defeat or skip an enemy, return `False`.
+- Return Result: If all enemies are defeated or skipped successfully, return `True`.
+
+4. User Interaction:
+- Continuous Input: Continuously prompt the user for input (initial power, enemies' power levels, number of skips, and recharges).
+- Input Validation: Validate the input to ensure exactly 11 enemies' power levels are provided.
+- Display Results: Display the result for each input scenario.
+- Continue or Exit: Ask if the user wants to continue or exit the program.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
