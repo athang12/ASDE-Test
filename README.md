@@ -84,6 +84,17 @@ Images will go here
   <li>Meaning of word <strong>Recharge</strong> <br/> During the design of this algorithm, the term "Recharge" is defined as restoring Abhimanyu's power to its original level, regardless of his current power state.<br/>Recharging Abhimanyu when his power is already at its initial level is unnecessary.</li>
   <li>The enemies in circles k3 and k7 deploy their optimal power strategically. If Abhimanyu defeats the enemies in these circles, they will regenerate with half of their initial power and can attack Abhimanyu from behind. Conversely, if Abhimanyu skips the k3 and k7 circles using his boon, these enemies will attack him from behind with their full initial power.</li>
 </ol>
+
+### Final Problem Statement
+<ul>
+  <li>Abhimanyu needs to cross 11 circles, each guarded by an enemy.</li>
+  <li>Each enemy has a power value k1, k2, ..., k11. enemy circles k4 and k8 get additional power of k3 or k3/2 and k7 or k7/2 respectively based on the situation</li>
+  <li>Abhimanyu starts with a certain power p.</li>
+  <li>Abhimanyu can skip fighting a times.</li>
+  <li>Abhimanyu can recharge his power to the original value b times.</li>
+  <li>Battling an enemy reduces Abhimanyu's power by the enemy's power.</li>
+  <li>If Abhimanyu's power is less than the enemy's power and he can't skip or recharge, he loses.</li>
+</ul>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
