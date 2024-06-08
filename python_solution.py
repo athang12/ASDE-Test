@@ -1,42 +1,49 @@
 def can_cross_chakravyuha(p, k, a, b):
     original_p = p  # Store the original power for recharging
-    curr_a = a
-    curr_b = b
+    curr_a = a  # Current skips available
+    curr_b = b  # Current recharges available
     
+    # Function to handle the attack from each enemy
     def handle_enemy_attack(p, enemy_power, curr_level, curr_a, curr_b):
-        if p >= enemy_power:
-            p -= enemy_power
-        else:
-            if curr_b > 0:
-                if original_p >= enemy_power:
-                    curr_b -= 1
-                    p = original_p
-                    p -= enemy_power
+        if p >= enemy_power:  # If current power is sufficient to defeat the enemy
+            p -= enemy_power  # Decrease power by enemy power
+        else:  # If current power is not sufficient
+            if curr_b > 0:  # If recharges are available
+                if original_p >= enemy_power:  # If original power is sufficient to defeat the enemy
+                    curr_b -= 1  # Use one recharge
+                    p = original_p  # Recharge power to original
+                    p -= enemy_power  # Decrease power by enemy power
 
+                    # Special case for 3rd and 7th enemy circle
                     if curr_level == 2 or curr_level == 6:
-                        k[curr_level+1] += (k[curr_level]/2)
-                else:
-                    if curr_a > 0:
-                        curr_a -= 1
+                        k[curr_level + 1] += (k[curr_level] / 2)
+                else:  # If original power is not sufficient
+                    if curr_a > 0:  # If skips are available
+                        curr_a -= 1  # Use one skip
 
+                        # Special case for 3rd and 7th enemy circle
                         if curr_level == 2 or curr_level == 6:
-                            k[curr_level+1] += k[curr_level]
+                            k[curr_level + 1] += k[curr_level]
                     else:
-                        return p, False
-            else:
-                if curr_a > 0:
-                    curr_a -= 1
+                        return p, False  # Neither skips nor recharges are available, return failure
+            else:  # If no recharges are available
+                if curr_a > 0:  # If skips are available
+                    curr_a -= 1  # Use one skip
+
+                    # Special case for 3rd and 7th enemy circle
                     if curr_level == 2 or curr_level == 6:
-                        k[curr_level+1] += k[curr_level]
+                        k[curr_level + 1] += k[curr_level]
                 else:
-                    return p, False
-        return p, True
+                    return p, False  # Neither skips nor recharges are available, return failure
+        return p, True  # Successfully handled enemy attack
     
+    # Iterate through all enemies
     for i in range(len(k)):
+        # Handle the attack from the current enemy
         p, success = handle_enemy_attack(p, k[i], i, curr_a, curr_b)
-        if not success:
-            return False
-    return True
+        if not success:  # If handling the attack failed
+            return False  # Abhimanyu cannot cross the Chakravyuha
+    return True  # Abhimanyu successfully crosses the Chakravyuha
 
 while True:
     # Take inputs from the user
