@@ -149,7 +149,6 @@ def function_name():
 <details>
 <summary>JavaScript Code</summary>
 ```javascript
-Copy code
 function functionName() {
     // JavaScript code here
 }
@@ -158,11 +157,10 @@ function functionName() {
 <details>
 <summary>C++ Code</summary>
 ```cpp
-Copy code
 void functionName() {
     // C++ code here
 }
-  ```
+```
 </details>
 
 
