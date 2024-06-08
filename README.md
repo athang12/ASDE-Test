@@ -208,15 +208,42 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!--Algorithm Analysis -->
 ## Algorithm Analysis
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+Time Complexity
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+1. Main Loop (in `can_cross_chakravyuha`):
+   - The main loop iterates through the vector `k` which has a fixed size of 11.
+   - Therefore, the loop executes 11 times regardless of the input.
+
+2. Inner Function (`handle_enemy_attack`):
+   - The `handle_enemy_attack` function contains a series of conditional checks and arithmetic operations. Each call to this function takes a constant amount of time \( O(1) \).
+
+3. Complexity per Iteration:
+   - Since `handle_enemy_attack` runs in \( O(1) \) and is called once per iteration of the main loop, each iteration of the main loop is \( O(1) \).
+
+4. Overall Time Complexity:
+   - The main loop runs 11 times and each iteration is \( O(1) \). Hence, the overall time complexity is \( O(11) \), which simplifies to \( O(1) \).
+
+Space Complexity
+
+1. Variables:
+   - The function uses a constant amount of extra space for variables `original_p`, `curr_a`, `curr_b`, and for returning a pair from the lambda function.
+
+2. Input Size:
+   - The input vector `k` has a fixed size of 11.
+   - No additional data structures of non-constant size are used.
+
+3. Space for Input:
+   - Space to store the vector `k` is \( O(11) \), which simplifies to \( O(1) \) since it is a constant size.
+   - Space to store integers `p`, `a`, and `b` is \( O(1) \).
+
+4. Overall Space Complexity:
+   - The overall space complexity is \( O(1) \).
+
+Summary
+- Time Complexity: O(1)
+- Space Complexity: O(1)
+
+The algorithm operates in constant time and space because the size of the input (the number of enemies) is fixed at 11. Therefore, the performance of the algorithm does not scale with the size of the input.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
