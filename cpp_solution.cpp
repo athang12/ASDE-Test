@@ -6,7 +6,7 @@ using namespace std;
 bool can_cross_chakravyuha(int p, vector<int>& k, int a, int b) {
     int original_p = p;  // Store the original power for recharging
     int curr_a = a;      // Current skips available
-    int curr_b = b;      // Current recharges available
+    int curr_b = b;      // Current recharges available.
     
     // Lambda function to handle the attack from each enemy
     auto handle_enemy_attack = [&](int& p, int enemy_power, int curr_level, int& curr_a, int& curr_b) -> pair<int, bool> {
