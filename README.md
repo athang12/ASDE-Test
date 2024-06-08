@@ -192,7 +192,7 @@ WHILE True DO
 ### [Python Code](python_solution.py)
 ### [C++ Code](cpp_solution.cpp)
 ### [Javascript Code](javascript_solution.js)
-### [Executable]([https://example.com](executable.exe)
+### [Executable](executable.exe)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
