@@ -144,7 +144,7 @@ Write code here
 def function_name():
     # Python code here
     pass
-```
+
 </details>
 <details>
 <summary>JavaScript Code</summary>
@@ -152,7 +152,7 @@ def function_name():
 function functionName() {
     // JavaScript code here
 }
-```
+
 </details>
 <details>
 <summary>C++ Code</summary>
@@ -160,9 +160,9 @@ function functionName() {
 void functionName() {
     // C++ code here
 }
-```
-</details>
 
+</details>
+```
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
