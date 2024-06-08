@@ -116,7 +116,7 @@ Images will go here
 <!-- Designing Algorithm -->
 ## Designing Algorithm
 
-Add workflow image here
+ <img src="img/abhi.jpg" alt="Logo" width="340" height="240">
 
 1. Initialization:
 - Variables Initialization: Store Abhimanyu's initial power, the current number of skips (`curr_a`), and recharges (`curr_b`).
