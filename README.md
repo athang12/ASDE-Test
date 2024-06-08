@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="img/abhi.jpeg" alt="Logo" width="80" height="80">
+    <img src="img/abhi.jpg" alt="Logo" width="80" height="80">
   <h3 align="center">Abhimanyu and the Chekravyuha</h3>
 
   <p align="center">
