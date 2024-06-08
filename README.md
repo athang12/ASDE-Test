@@ -190,9 +190,9 @@ WHILE True DO
 
 
 ### [Python Code](python_solution.py)
-### [C++ Code]([https://example.com](https://github.com/athang12/Answer-to-the-prblm/blob/main/cpp_solution.cpp))
-### [Javascript Code]([https://example.com](https://github.com/athang12/Answer-to-the-prblm/blob/main/javascript_solution.js))
-### [Executable]([https://example.com](https://github.com/athang12/Answer-to-the-prblm/blob/main/executable.exe))
+### [C++ Code](cpp_solution.cpp)
+### [Javascript Code](javascript_solution.js)
+### [Executable]([https://example.com](executable.exe)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
