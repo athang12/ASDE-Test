@@ -149,9 +149,8 @@ def function_name():
 <details>
 <summary>JavaScript Code</summary>
 ```javascript
-function functionName() {
-    // JavaScript code here
-}
+  function ABC(){
+  }
 ```
 </details>
 <details>
