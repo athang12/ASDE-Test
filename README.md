@@ -117,7 +117,9 @@ Docu
 ### Assumptions
 <ol>
   <li>Meaning of word <strong>Recharge</strong> <br/> During the design of this algorithm, the term "Recharge" is defined as restoring Abhimanyu's power to its original level, regardless of his current power state.<br/>Recharging Abhimanyu when his power is already at its initial level is unnecessary.</li>
+  <li>The Enemy deploys optimal power every time i.e k3 and k7 will always use there boons whenever possible. If Abhimanyu defeats k3 or k7 enemy circles then they will regenerate with half their initial powers and if he skips k3 and k7 circles then they will attack Abhimanyu from behind with there full initial powers</li>
 </ol>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
