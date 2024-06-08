@@ -137,12 +137,34 @@ Add workflow image here
 
 Write code here 
 
-```javascript I'm A tab
-console.log('Code Tab A');
+<details>
+<summary>Python Code</summary>
+
+```python
+def function_name():
+    # Python code here
+    pass
 ```
-```javascript I'm tab B
-console.log('Code Tab B');
+</details>
+<details>
+<summary>JavaScript Code</summary>
+```javascript
+Copy code
+function functionName() {
+    // JavaScript code here
+}
 ```
+</details>
+<details>
+<summary>C++ Code</summary>
+```cpp
+Copy code
+void functionName() {
+    // C++ code here
+}
+  ```
+</details>
+
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
