@@ -1,0 +1,209 @@
+Test Case 1:
+p = 14,
+k = 37 13 92 5 23 71 56 32 50 92 25,
+a = 0,
+b = 2
+Can cross => No
+
+Test Case 2:
+p = 81,
+k = 25 78 21 15 60 13 46 7 97 56 89,
+a = 0,
+b = 0
+Can cross => No
+
+Test Case 3:
+p = 33,
+k = 20 39 66 86 42 86 43 116 59 20 27,
+a = 5,
+b = 0
+Can cross => Yes
+
+Test Case 4:
+p = 3,
+k = 38 41 68 118 70 25 6 75 46 22 26,
+a = 4,
+b = 5
+Can cross => Yes
+
+Test Case 5:
+p = 89,
+k = 25 53 68 44.0 68 13 41 107.5 92 53 17,
+a = 3,
+b = 2
+Can cross => Yes
+
+Test Case 6:
+p = 19,
+k = 93 37 12 54 37 8 60 77 66 31 24,
+a = 0,
+b = 5
+Can cross => No
+
+Test Case 7:
+p = 55,
+k = 15 44 5 30 14 61 96 163 75 16 91,
+a = 4,
+b = 5
+Can cross => Yes
+
+Test Case 8:
+p = 46,
+k = 16 29 81 104 99 16 57 72 75 78 44,
+a = 1,
+b = 2
+Can cross => Yes
+
+Test Case 9:
+p = 30,
+k = 59 58 10 9 3 22 39 110 50 76 22,
+a = 2,
+b = 3
+Can cross => Yes
+
+Test Case 10:
+p = 66,
+k = 39 80 1 8 82 10 98 138 39 5 17,
+a = 5,
+b = 1
+Can cross => Yes
+
+Test Case 11:
+p = 70,
+k = 12 10 80 31 84 45 29 26 49 67 100,
+a = 0,
+b = 2
+Can cross => No
+
+Test Case 12:
+p = 1,
+k = 80 33 49 61 15 78 97 187 9 54 44,
+a = 3,
+b = 5
+Can cross => Yes
+
+Test Case 13:
+p = 67,
+k = 83 3 36 37 48 55 66 99.0 12 17 81,
+a = 5,
+b = 4
+Can cross => Yes
+
+Test Case 14:
+p = 55,
+k = 25 100 63 141 45 93 18 104.0 60 41 88,
+a = 4,
+b = 5
+Can cross => Yes
+
+Test Case 15:
+p = 53,
+k = 99 78 20 16 99 94 42 37.0 26 40 16,
+a = 2,
+b = 5
+Can cross => Yes
+
+Test Case 16:
+p = 7,
+k = 97 5 72 123 78 11 19 100 6 48 35,
+a = 5,
+b = 2
+Can cross => Yes
+
+Test Case 17:
+p = 48,
+k = 33 56 37 52.5 27 91 7 41 54 66 98,
+a = 4,
+b = 1
+Can cross => Yes
+
+Test Case 18:
+p = 93,
+k = 38 34 14 69 37 88 49 55.5 47 45 34,
+a = 5,
+b = 3
+Can cross => Yes
+
+Test Case 19:
+p = 7,
+k = 37 36 69 153 83 33 53 63 93 64 86,
+a = 1,
+b = 4
+Can cross => Yes
+
+Test Case 20:
+p = 8,
+k = 90 22 78 29 75 82 72 13 79 16 61,
+a = 0,
+b = 4
+Can cross => No
+
+Test Case 21:
+p = 1,
+k = 86 24 56 25 58 51 78 16 81 20 19,
+a = 0,
+b = 2
+Can cross => No
+
+Test Case 22:
+p = 21,
+k = 22 55 87 97 53 52 74 101 74 4 68,
+a = 5,
+b = 1
+Can cross => Yes
+
+Test Case 23:
+p = 43,
+k = 79 75 45 47 77 35 58 22 4 88 28,
+a = 0,
+b = 2
+Can cross => No
+
+Test Case 24:
+p = 64,
+k = 24 87 39 22 43 15 26 116 18 52 46,
+a = 5,
+b = 0
+Can cross => Yes
+
+Test Case 25:
+p = 98,
+k = 69 97 34 22.0 5 96 50 26.0 71 70 68,
+a = 5,
+b = 2
+Can cross => Yes
+
+Test Case 26:
+p = 16,
+k = 44 19 69 75 81 23 33 35 19 29 75,
+a = 0,
+b = 4
+Can cross => No
+
+Test Case 27:
+p = 22,
+k = 75 66 32 40 13 96 59 81 2 90 61,
+a = 4,
+b = 3
+Can cross => Yes
+
+Test Case 28:
+p = 33,
+k = 54 82 69 68 21 23 66 5 60 78 87,
+a = 0,
+b = 0
+Can cross => No
+
+Test Case 29:
+p = 99,
+k = 19 65 91 124 13 54 45 74 64 5 30,
+a = 2,
+b = 0
+Can cross => Yes
+
+Test Case 30:
+p = 57,
+k = 84 73 59 10 41 35 74 7 78 86 16,
+a = 0,
+b = 1
+Can cross => No
