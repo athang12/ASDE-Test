@@ -202,7 +202,7 @@ WHILE True DO
 <!--Algorithm Analysis -->
 ## Algorithm Analysis
 
-Time Complexity
+### Time Complexity
 
 1. Main Loop (in `can_cross_chakravyuha`):
    - The main loop iterates through the vector `k` which has a fixed size of 11.
@@ -217,7 +217,7 @@ Time Complexity
 4. Overall Time Complexity:
    - The main loop runs 11 times and each iteration is O(1). Hence, the overall time complexity is O(11), which simplifies to O(1).
 
-Space Complexity
+### Space Complexity
 
 1. Variables:
    - The function uses a constant amount of extra space for variables `original_p`, `curr_a`, `curr_b`, and for returning a pair from the lambda function.
@@ -233,7 +233,7 @@ Space Complexity
 4. Overall Space Complexity:
    - The overall space complexity is O(1).
 
-Summary
+### Summary
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 
@@ -246,11 +246,9 @@ The algorithm operates in constant time and space because the size of the input 
 <!-- Contact and Acknowledgement -->
 ## Contact and Acknowledgement
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Athang Yende - [LinkedIn](https://www.linkedin.com/in/athang-yende-461a00224/) - athangyende459@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+[Portfolio](https://athang-portfolio.netlify.app/) - https://athang-portfolio.netlify.app/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
