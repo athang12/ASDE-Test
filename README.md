@@ -13,8 +13,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="img/abhi.jpg" alt="Logo" width="240" height="220">
-  <h3 align="center">Abhimanyu and the Chekravyuha</h3>
+    <img src="img/abhi.jpg" alt="Logo" width="340" height="240">
+  <h3 align="center">Abhimanyu and the Chakravyuha</h3>
 
   <p align="center">
     My Approach and proposed algorithm to the problem
