@@ -30,7 +30,14 @@
     <li>
       <a href="#introduction-to-problem">Introduction to Problem</a>
     </li>
-    <li><a href="#problem-analysis-and-simplification">Problem Analysis and Simplification</a></li>
+    <li>
+        <a href="#problem-analysis-and-simplification">Problem Analysis and Simplification</a>
+        <ul>
+            <li><a href="#simplifying-problem-statement">Simplifying Problem Statement</a></li>
+            <li><a href="#assumptions">Assumptions</a></li>
+            <li><a href="#final-problem-statement">Final Problem Statement</a></li>
+        </ul>
+    </li>
     <li><a href="#designing-algorithm">Designing Algorithm</a></li>
     <li><a href="#implementation">Implementation</a></li>
     <li><a href="#algorithm-analysis">Algorithm Analysis</a></li>
