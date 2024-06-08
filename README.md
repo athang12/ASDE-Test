@@ -139,7 +139,7 @@ Write code here
 
 <details>
 <summary>Python Code</summary>
-```
+```python
 def function_name():
     # Python code here
     pass
@@ -147,14 +147,14 @@ def function_name():
 </details>
 <details>
 <summary>JavaScript Code</summary>
-```
+```python
   function ABC(){
   }
 ```
 </details>
 <details>
 <summary>C++ Code</summary>
-```
+```python
 void functionName() {
     // C++ code here
 }
