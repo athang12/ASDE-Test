@@ -189,8 +189,8 @@ WHILE True DO
 ```
 
 
-### [Python Code](https://example.com)_
-_For more examples, please refer to the [Documentation](https://example.com)_
+### [Python Code](https://example.com)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
