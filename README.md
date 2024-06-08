@@ -39,7 +39,16 @@
         </ul>
     </li>
     <li><a href="#designing-algorithm">Designing Algorithm</a></li>
-    <li><a href="#implementation">Implementation</a></li>
+    <li>
+        <a href="#implementation">Implementation</a>
+        <ul>
+            <li><a href="#pseudocode">Pseudocode</a></li>
+            <li><a href="#python-code">Python Code</a></li>
+            <li><a href="#c++-code">C++ Code</a></li>
+            <li><a href="#javascript-code">Javascript Code</a></li>
+            <li><a href="#executable">Executable</a></li>
+        </ul>
+    </li>
     <li><a href="#algorithm-analysis">Algorithm Analysis</a></li>
     <li><a href ="#contact-and-acknowledgement">Contact and Acknowledgement</a></li>
   </ol>
