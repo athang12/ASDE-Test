@@ -135,34 +135,69 @@ Add workflow image here
 <!-- Implementation -->
 ## Implementation
 
-Write code here 
+### Pseudocode
 
-<details>
-<summary>Python Code</summary>
-<code>
-  def function_name():
-    # Python code here
-    pass
-</code>
+```
+FUNCTION can_cross_chakravyuha(p, k, a, b)
+    SET original_p = p
+    SET curr_a = a
+    SET curr_b = b
+
+    FUNCTION handle_enemy_attack(p, enemy_power, curr_level, curr_a, curr_b)
+        IF p >= enemy_power THEN
+            p -= enemy_power
+        ELSE
+            IF curr_b > 0 THEN
+                IF original_p >= enemy_power THEN
+                    curr_b -= 1
+                    p = original_p
+                    p -= enemy_power
+
+                    IF curr_level == 2 OR curr_level == 6 THEN
+                        k[curr_level+1] += k[curr_level] / 2
+                ELSE
+                    IF curr_a > 0 THEN
+                        curr_a -= 1
+
+                        IF curr_level == 2 OR curr_level == 6 THEN
+                            k[curr_level+1] += k[curr_level]
+                    ELSE
+                        RETURN (p, False)
+            ELSE
+                IF curr_a > 0 THEN
+                    curr_a -= 1
+
+                    IF curr_level == 2 OR curr_level == 6 THEN
+                        k[curr_level+1] += k[curr_level]
+                ELSE
+                    RETURN (p, False)
+        RETURN (p, True)
+
+    FOR i FROM 0 TO LENGTH(k) - 1 DO
+        (p, success) = handle_enemy_attack(p, k[i], i, curr_a, curr_b)
+        IF NOT success THEN
+            RETURN False
+    RETURN True
+
+WHILE True DO
+    p = INPUT("Enter Abhimanyu's initial power: ")
+    k = INPUT("Enter the power levels of the 11 enemies (space-separated): ")
+    a = INPUT("Enter the number of skips available: ")
+    b = INPUT("Enter the number of recharges available: ")
+
+    IF LENGTH(k) != 11 THEN
+        PRINT("Error: Please enter exactly 11 enemy power levels.")
+    ELSE
+        result = can_cross_chakravyuha(p, k, a, b)
+        PRINT("Can Abhimanyu cross the Chakravyuha?", "Yes" IF result ELSE "No")
+
+    continue_input = INPUT("Do you want to input another scenario? (y(Yes)/n(No)):").strip().lower()
+    IF continue_input != 'y' THEN
+        PRINT("Thank you for playing !")
+        BREAK
+```
 
 
-</details>
-<details>
-<summary>JavaScript Code</summary>
-<code>
-  def function_name():
-    # Python code here
-    pass
-</code>
-</details>
-<details>
-<summary>C++ Code</summary>
-<code>
-  def function_name():
-    # Python code here
-    pass
-</code>
-</details>
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
