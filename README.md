@@ -115,8 +115,9 @@ Images will go here
 
 <!-- Designing Algorithm -->
 ## Designing Algorithm
-
- <img src="img/flow.png" alt="Flowchart" width="340" height="240">
+<div align="center">
+ <img src="img/flow.png" alt="Flowchart" width="440" height="340">
+</div>div>
 
 1. Initialization:
 - Variables Initialization: Store Abhimanyu's initial power, the current number of skips (`curr_a`), and recharges (`curr_b`).
