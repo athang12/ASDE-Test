@@ -116,7 +116,7 @@ Docu
 
 ### Assumptions
 <ol>
-  <li>Meaning of word <strong>Recharge</strong> <br/> During the design of this algorithm the meaning of word Recharge is taken as restoring Abhimanyu's power back to his original power from any state.<br/>Recharging over Abhimanyu with initial powers is useless</li>
+  <li>Meaning of word <strong>Recharge</strong> <br/> During the design of this algorithm, the term "Recharge" is defined as restoring Abhimanyu's power to its original level, regardless of his current power state.<br/>Recharging Abhimanyu when his power is already at its initial level is unnecessary.</li>
 </ol>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
