@@ -139,29 +139,27 @@ Write code here
 
 <details>
 <summary>Python Code</summary>
-
-```python
+```
 def function_name():
     # Python code here
     pass
-
+```
 </details>
 <details>
 <summary>JavaScript Code</summary>
-
+```
   function ABC(){
   }
-
+```
 </details>
 <details>
 <summary>C++ Code</summary>
-
+```
 void functionName() {
     // C++ code here
 }
-
-</details>
 ```
+</details>
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
