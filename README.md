@@ -37,7 +37,6 @@
     <li><a href="#designing-algorithm">Designing Algorithm</a></li>
     <li><a href="#implementation">Implementation</a></li>
     <li><a href="#algorithm-analysis">Algorithm Analysis</a></li>
-    <li><a href="#documentation">Documentation</a></li>
     <li><a href ="#contact-and-acknowledgement">Contact and Acknowledgement</a></li>
   </ol>
 </details>
@@ -239,15 +238,6 @@ Summary
 - Space Complexity: O(1)
 
 The algorithm operates in constant time and space because the size of the input (the number of enemies) is fixed at 11. Therefore, the performance of the algorithm does not scale with the size of the input.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- Documentation -->
-## Documentation
-
-Docu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
