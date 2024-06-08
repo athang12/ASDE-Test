@@ -115,7 +115,9 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 Docu
 
 ### Assumptions
-
+<ol>
+  <li>Meaning of word **Recharge** <br/> During the design of this algorithm the meaning of word Recharge is taken as restoring Abhimanyu's power back to his original power from any state.<br/>Recharging over Abhimanyu with initial powers is useless</li>
+</ol>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
