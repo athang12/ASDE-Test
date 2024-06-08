@@ -1,6 +1,6 @@
 function canCrossChakravyuha(p, k, a, b) {
     const originalP = p;  // Store the original power for recharging
-    let currA = a;        // Current skips available
+    let currA = a;        // Current skips available.
     let currB = b;        // Current recharges available
 
     // Function to handle the attack from each enemy
