@@ -144,22 +144,22 @@ Write code here
 def function_name():
     # Python code here
     pass
-```
+
 </details>
 <details>
 <summary>JavaScript Code</summary>
-```javascript
+
   function ABC(){
   }
-```
+
 </details>
 <details>
 <summary>C++ Code</summary>
-```cpp
+
 void functionName() {
     // C++ code here
 }
-```
+
 </details>
 ```
 
