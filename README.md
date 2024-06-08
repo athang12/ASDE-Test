@@ -49,7 +49,14 @@
             <li><a href="#executable">Executable</a></li>
         </ul>
     </li>
-    <li><a href="#algorithm-analysis">Algorithm Analysis</a></li>
+    <li>
+        <a href="#algorithm-analysis">Algorithm Analysis</a>
+        <ul>
+            <li><a href="#time-complexity">Time Complexity</a></li>
+            <li><a href="#space-complexity">Space Complexity</a></li>
+            <li><a href="#summary">Summary</a></li>
+        </ul>
+    </li>
     <li><a href ="#contact-and-acknowledgement">Contact and Acknowledgement</a></li>
   </ol>
 </details>
