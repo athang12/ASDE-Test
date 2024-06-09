@@ -1,7 +1,7 @@
 function canCrossChakravyuha(p, k, a, b) {
     const originalP = p;  // Store the original power for recharging
-    let currA = a;        // Current skips available.
-    let currB = b;        // Current recharges available
+    let currA = a;
+    let currB = b;
 
     // Function to handle the attack from each enemy
     function handleEnemyAttack(p, enemyPower, currLevel, currA, currB) {
@@ -52,6 +52,7 @@ function canCrossChakravyuha(p, k, a, b) {
         const result = handleEnemyAttack(p, k[i], i, currA, currB);
         p = result[0]; // Update power
         if (!result[1]) { // If handling the attack failed
+            console.log(`Abhimanyu failed at level ${i + 1} with power ${p}\n`);
             return false; // Abhimanyu cannot cross the Chakravyuha
         }
     }
