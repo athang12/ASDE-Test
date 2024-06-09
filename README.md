@@ -52,8 +52,8 @@
     <li>
         <a href="#algorithm-analysis">Algorithm Analysis</a>
         <ul>
-            <li><a href="#scenario-1:-abhimanyu-can-pass-all-11-circles">Scenario 1: Abhimanyu Can Pass All 11 Circles</a></li>
-            <li><a href="#scenario-2:-sbhimanyu-fails-in-between">Scenario 2: Abhimanyu Fails in Between</a></li>
+            <li><a href="#scenario-1:">Scenario 1: Abhimanyu Can Pass All 11 Circles</a></li>
+            <li><a href="#scenario-2:">Scenario 2: Abhimanyu Fails in Between</a></li>
             <li><a href="#time-complexity">Time Complexity</a></li>
             <li><a href="#space-complexity">Space Complexity</a></li>
             <li><a href="#summary">Summary</a></li>
@@ -227,7 +227,8 @@ WHILE True DO
 
 <!--Algorithm Analysis -->
 ## Algorithm Analysis
-### Scenario 1: Abhimanyu Can Pass All 11 Circles
+### Scenario 1: 
+Abhimanyu Can Pass All 11 Circles
 
 Inputs:
 - Abhimanyu's initial power (`p`): 50
@@ -295,7 +296,8 @@ Step-by-Step Execution:
 
 Result: Abhimanyu successfully defeats all enemies.
 
-### Scenario 2: Abhimanyu Fails in Between
+### Scenario 2: 
+Abhimanyu Fails in Between
 
 Inputs:
 - Abhimanyu's initial power (`p`): 40
