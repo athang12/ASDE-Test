@@ -52,6 +52,8 @@
     <li>
         <a href="#algorithm-analysis">Algorithm Analysis</a>
         <ul>
+            <li><a href="#scenario-1:-abhimanyu-can-pass-all-11-circles">Scenario 1: Abhimanyu Can Pass All 11 Circles</a></li>
+            <li><a href="#scenario-2:-sbhimanyu-fails-in-between">Scenario 2: Abhimanyu Fails in Between</a></li>
             <li><a href="#time-complexity">Time Complexity</a></li>
             <li><a href="#space-complexity">Space Complexity</a></li>
             <li><a href="#summary">Summary</a></li>
@@ -225,6 +227,124 @@ WHILE True DO
 
 <!--Algorithm Analysis -->
 ## Algorithm Analysis
+### Scenario 1: Abhimanyu Can Pass All 11 Circles
+
+Inputs:
+- Abhimanyu's initial power (`p`): 50
+- Power levels of the 11 enemies (`k`): 10 20 30 15 25 35 40 20 10 5 15
+- Number of skips available (`a`): 1
+- Number of recharges available (`b`): 1
+
+Step-by-Step Execution:
+
+1. Initial State: 
+   - `p = 50`
+   - `k = [10, 20, 30, 15, 25, 35, 40, 20, 10, 5, 15]`
+   - `a = 1`
+   - `b = 1`
+
+2. Enemy 1 (Power = 10):
+   - `p = 50 - 10 = 40`
+   - Abhimanyu's power is sufficient to defeat the enemy.
+
+3. Enemy 2 (Power = 20):
+   - `p = 40 - 20 = 20`
+   - Abhimanyu's power is sufficient to defeat the enemy.
+
+4. Enemy 3 (Power = 30):
+   - `p = 20`, but enemy power is 30.
+   - Use a recharge (`b = 0`): `p = 50` (original power).
+   - `p = 50 - 30 = 20`
+   - Special case: Increase next enemy's power by half of current enemy's power: `k[3] = 15 + 15 = 22.5`
+
+5. Enemy 4 (Power = 22.5):
+   - `p = 20`, but enemy power is 22.5.
+   - Use a skip (`a = 0`): Skip this enemy.
+
+6. Enemy 5 (Power = 25):
+   - `p = 20`, but enemy power is 25.
+   - Use a skip (`a = 0`): Skip this enemy.
+
+7. Enemy 6 (Power = 35):
+   - `p = 20`, but enemy power is 35.
+   - Use a recharge (`b = 0`): `p = 50` (original power).
+   - `p = 50 - 35 = 15`
+   - Special case: Increase next enemy's power by half of current enemy's power: `k[7] = 20 + 20 = 40`
+
+8. Enemy 7 (Power = 40):
+   - `p = 15`, but enemy power is 40.
+   - Use a skip (`a = 0`): Skip this enemy.
+
+9. Enemy 8 (Power = 20):
+   - `p = 15`, but enemy power is 20.
+   - Use a recharge (`b = 0`): `p = 50` (original power).
+   - `p = 50 - 20 = 30`
+   - Special case: Increase next enemy's power by half of current enemy's power: `k[9] = 5 + 5 = 10`
+
+10. Enemy 9 (Power = 10):
+    - `p = 30 - 10 = 20`
+    - Abhimanyu's power is sufficient to defeat the enemy.
+
+11. Enemy 10 (Power = 5):
+    - `p = 20 - 5 = 15`
+    - Abhimanyu's power is sufficient to defeat the enemy.
+
+12. Enemy 11 (Power = 15):
+    - `p = 15 - 15 = 0`
+    - Abhimanyu's power is sufficient to defeat the enemy.
+
+Result: Abhimanyu successfully defeats all enemies.
+
+### Scenario 2: Abhimanyu Fails in Between
+
+Inputs:
+- Abhimanyu's initial power (`p`): 40
+- Power levels of the 11 enemies (`k`): 10 20 30 15 25 35 40 20 10 5 15
+- Number of skips available (`a`): 1
+- Number of recharges available (`b`): 1
+
+Step-by-Step Execution:
+
+1. Initial State: 
+   - `p = 40`
+   - `k = [10, 20, 30, 15, 25, 35, 40, 20, 10, 5, 15]`
+   - `a = 1`
+   - `b = 1`
+
+2. Enemy 1 (Power = 10):
+   - `p = 40 - 10 = 30`
+   - Abhimanyu's power is sufficient to defeat the enemy.
+
+3. Enemy 2 (Power = 20):
+   - `p = 30 - 20 = 10`
+   - Abhimanyu's power is sufficient to defeat the enemy.
+
+4. Enemy 3 (Power = 30):
+   - `p = 10`, but enemy power is 30.
+   - Use a recharge (`b = 0`): `p = 40` (original power).
+   - `p = 40 - 30 = 10`
+   - Special case: Increase next enemy's power by half of current enemy's power: `k[3] = 15 + 15 = 22.5`
+
+5. Enemy 4 (Power = 22.5):
+   - `p = 10`, but enemy power is 22.5.
+   - Use a skip (`a = 0`): Skip this enemy.
+
+6. Enemy 5 (Power = 25):
+   - `p = 10`, but enemy power is 25.
+   - No skips or recharges left.
+   - Abhimanyu fails.
+
+Result: Abhimanyu fails at level 5 with 15 power short.
+
+Explanation:
+
+Scenario 1:
+- Abhimanyu strategically uses his recharges and skips to defeat all enemies.
+- Special cases (3rd and 7th enemies) increase the power of subsequent enemies, but Abhimanyu manages to handle them with careful use of his resources.
+
+Scenario 2:
+- Abhimanyu's initial power is not sufficient to handle all enemies with the given resources.
+- After using one recharge and one skip, he faces an enemy he cannot defeat, leading to his failure at the 5th level.
 
 ### Time Complexity
 
