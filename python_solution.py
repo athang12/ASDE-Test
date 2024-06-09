@@ -1,8 +1,8 @@
 def can_cross_chakravyuha(p, k, a, b):
     original_p = p  # Store the original power for recharging
     curr_a = a  # Current skips available
-    curr_b = b  # Current recharges available.
-    
+    curr_b = b  # Current recharges available
+
     # Function to handle the attack from each enemy
     def handle_enemy_attack(p, enemy_power, curr_level, curr_a, curr_b):
         if p >= enemy_power:  # If current power is sufficient to defeat the enemy
@@ -29,19 +29,17 @@ def can_cross_chakravyuha(p, k, a, b):
             else:  # If no recharges are available
                 if curr_a > 0:  # If skips are available
                     curr_a -= 1  # Use one skip
-
-                    # Special case for 3rd and 7th enemy circle
                     if curr_level == 2 or curr_level == 6:
                         k[curr_level + 1] += k[curr_level]
                 else:
                     return p, False  # Neither skips nor recharges are available, return failure
         return p, True  # Successfully handled enemy attack
-    
+
     # Iterate through all enemies
     for i in range(len(k)):
-        # Handle the attack from the current enemy
         p, success = handle_enemy_attack(p, k[i], i, curr_a, curr_b)
         if not success:  # If handling the attack failed
+            print(f"Abhimanyu fails at level {i + 1} with remaining power {p}.\n")
             return False  # Abhimanyu cannot cross the Chakravyuha
     return True  # Abhimanyu successfully crosses the Chakravyuha
 
@@ -64,5 +62,5 @@ while True:
     continue_input = input("Do you want to input another scenario? (y(Yes)/n(No)):").strip().lower()
     print()
     if continue_input != 'y':
-        print("Thank you for playing !")
+        print("Thank you for playing!")
         break
