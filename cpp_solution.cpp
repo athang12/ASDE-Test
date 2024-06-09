@@ -5,62 +5,71 @@ using namespace std;
 // Function to determine if Abhimanyu can cross the Chakravyuha
 bool can_cross_chakravyuha(int p, vector<int>& k, int a, int b) {
     int original_p = p;  // Store the original power for recharging
-    int curr_a = a;      // Current skips available
-    int curr_b = b;      // Current recharges available.
+    int curr_a = a;      // Current number of skips available
+    int curr_b = b;      // Current number of recharges available
     
-    // Lambda function to handle the attack from each enemy
+    // Lambda function to handle the attack of each enemy
     auto handle_enemy_attack = [&](int& p, int enemy_power, int curr_level, int& curr_a, int& curr_b) -> pair<int, bool> {
-        if (p >= enemy_power) { // If current power is sufficient to defeat the enemy
-            p -= enemy_power;  // Decrease power by enemy power
-        } else { // If current power is not sufficient
-            if (curr_b > 0) { // If recharges are available
-                if (original_p >= enemy_power) { // If original power is sufficient to defeat the enemy
-                    curr_b -= 1;  // Use one recharge
-                    p = original_p;  // Recharge power to original
-                    p -= enemy_power;  // Decrease power by enemy power
+        if (p >= enemy_power) {
+            // If current power is sufficient to defeat the enemy
+            p -= enemy_power;
+        } else {
+            // If current power is not sufficient to defeat the enemy
+            if (curr_b > 0) {
+                // If recharges are available
+                if (original_p >= enemy_power) {
+                    // If original power is sufficient to defeat the enemy after recharging
+                    curr_b -= 1;   // Use one recharge
+                    p = original_p; // Recharge power
+                    p -= enemy_power; // Defeat the enemy
 
-                    // Special case for 3rd and 7th enemy circle
+                    // Check for special cases of the 3rd and 7th enemy circle
                     if (curr_level == 2 || curr_level == 6) {
-                        k[curr_level + 1] += (k[curr_level] / 2);
-                    }
-                } else { // If original power is not sufficient
-                    if (curr_a > 0) { // If skips are available
-                        curr_a -= 1;  // Use one skip
-
-                        // Special case for 3rd and 7th enemy circle
-                        if (curr_level == 2 || curr_level == 6) {
-                            k[curr_level + 1] += k[curr_level];
-                        }
-                    } else {
-                        return make_pair(p, false); // Neither skips nor recharges are available, return failure
-                    }
-                }
-            } else { // If no recharges are available
-                if (curr_a > 0) { // If skips are available
-                    curr_a -= 1;  // Use one skip
-
-                    // Special case for 3rd and 7th enemy circle
-                    if (curr_level == 2 || curr_level == 6) {
-                        k[curr_level + 1] += k[curr_level];
+                        k[curr_level + 1] += (k[curr_level] / 2); // Increase next enemy's power
                     }
                 } else {
-                    return make_pair(p, false); // Neither skips nor recharges are available, return failure
+                    // If original power is not sufficient, check for skips
+                    if (curr_a > 0) {
+                        curr_a -= 1; // Use one skip
+                        
+                        // Special cases for 3rd and 7th enemy circle
+                        if (curr_level == 2 || curr_level == 6) {
+                            k[curr_level + 1] += k[curr_level]; // Increase next enemy's power
+                        }
+                    } else {
+                        // If no skips left, Abhimanyu fails
+                        return make_pair(p, false);
+                    }
+                }
+            } else {
+                // If no recharges are available, check for skips
+                if (curr_a > 0) {
+                    curr_a -= 1; // Use one skip
+                    
+                    // Special cases for 3rd and 7th enemy circle
+                    if (curr_level == 2 || curr_level == 6) {
+                        k[curr_level + 1] += k[curr_level]; // Increase next enemy's power
+                    }
+                } else {
+                    // If no skips left, Abhimanyu fails
+                    return make_pair(p, false);
                 }
             }
         }
-        return make_pair(p, true); // Successfully handled enemy attack
+        return make_pair(p, true);
     };
 
-    // Iterate through all enemies
+    // Loop through all enemies
     for (int i = 0; i < k.size(); ++i) {
-        // Handle the attack from the current enemy
         pair<int, bool> result = handle_enemy_attack(p, k[i], i, curr_a, curr_b);
-        p = result.first; // Update power
-        if (!result.second) { // If handling the attack failed
-            return false; // Abhimanyu cannot cross the Chakravyuha
+        p = result.first;
+        if (!result.second) {
+            // If Abhimanyu fails, print the level and power shortage
+            cout << "\nAbhimanyu fails at level " << i + 1 << " with " << k[i] - p << " power short." << endl;
+            return false;
         }
     }
-    return true; // Abhimanyu successfully crosses the Chakravyuha
+    return true;
 }
 
 int main() {
@@ -70,7 +79,7 @@ int main() {
         cout << "Enter Abhimanyu's initial power: ";
         cin >> p;
 
-        vector<int> k(11); // Vector to store the power levels of the 11 enemies
+        vector<int> k(11);
         cout << "Enter the power levels of the 11 enemies (space-separated): ";
         for (int& power : k) {
             cin >> power;
