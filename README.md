@@ -229,7 +229,7 @@ WHILE True DO
 ## Algorithm Analysis
 
 ### Scenario A 
-Abhimanyu Can Pass All 11 Circles
+<h3>Abhimanyu Can Pass All 11 Circles</h3>
 
 Inputs:
 - Abhimanyu's initial power (`p`): 50
@@ -298,7 +298,7 @@ Step-by-Step Execution:
 Result: Abhimanyu successfully defeats all enemies.
 
 ### Scenario B 
-Abhimanyu Fails in Between
+<h3>Abhimanyu Fails in Between</h3>
 
 Inputs:
 - Abhimanyu's initial power (`p`): 40
@@ -341,11 +341,11 @@ Result: Abhimanyu fails at level 5 with 15 power short.
 
 Explanation:
 
-Scenario 1:
+Scenario A:
 - Abhimanyu strategically uses his recharges and skips to defeat all enemies.
 - Special cases (3rd and 7th enemies) increase the power of subsequent enemies, but Abhimanyu manages to handle them with careful use of his resources.
 
-Scenario 2:
+Scenario B:
 - Abhimanyu's initial power is not sufficient to handle all enemies with the given resources.
 - After using one recharge and one skip, he faces an enemy he cannot defeat, leading to his failure at the 5th level.
 
